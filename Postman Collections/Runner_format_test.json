@@ -1,0 +1,75 @@
+{
+  "info": {
+    "name": "Runner format test",
+    "_postman_id": "40c326de-f914-dfe1-d872-a316eddd396b",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "b6191f6f-0335-c715-9119-11098b6b772e",
+      "name": "Request 1",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"request 1 passing test \" + iteration] = true;",
+              "tests[\"request 1 failing test \" + iteration] = true;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "httpbin.org/get",
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"timestamp\": \"{{$timestamp}}\"\n}"
+        },
+        "description": ""
+      }
+    },
+    {
+      "_postman_id": "a5cd81e2-3dd8-e763-2c90-eb228016c054",
+      "name": "Request 2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "console.log(globals);",
+              "tests[\"Your test name\"] = jsonData.args.a === \"c\";"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "httpbin.org/get?a={{b}}",
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"timestamp\": \"{{$timestamp}}\"\n}"
+        },
+        "description": ""
+      }
+    }
+  ]
+}
