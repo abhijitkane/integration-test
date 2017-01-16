@@ -8,6 +8,12 @@
   },
   "item": [
     {
+      "_postman_id": "7a3460f0-a8cd-2321-e744-3433be798886",
+      "name": "Test Folder",
+      "description": "",
+      "item": []
+    },
+    {
       "_postman_id": "bbcc0d51-6a80-2fc1-7962-69d5f74acedd",
       "name": "First request!",
       "request": {
