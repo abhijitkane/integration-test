@@ -1,0 +1,39 @@
+{
+  "variables": [],
+  "info": {
+    "name": "forJaggi",
+    "_postman_id": "91e2fb67-8851-a5dd-2f4e-bf87047be319",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "0a6a0994-6e09-a3ee-24ea-44e6387a0217",
+      "name": "httpbin.org/get?e={{e1}}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "httpbin.org/get?e={{e1}}",
+          "host": [
+            "httpbin",
+            "org"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "e",
+              "value": "{{e1}}",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
