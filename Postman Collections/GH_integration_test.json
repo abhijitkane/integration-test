@@ -2,7 +2,30 @@
   "info": {
     "_postman_id": "57088e62-1c3f-4bd3-9f73-da4a4274c606",
     "name": "GH integration test",
+    "description": "add collection description",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": []
+  "item": [],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "f2bd8deb-6b26-458f-9a0c-4771e8c45212",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "61c6433a-e68b-4bae-8304-548d965d8b24",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
 }
