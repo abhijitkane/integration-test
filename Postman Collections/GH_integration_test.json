@@ -5,7 +5,19 @@
     "description": "add collection description",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": [],
+  "item": [
+    {
+      "_postman_id": "24d7d045-65b8-4ac4-9f71-c9d14562c0f3",
+      "name": "REQ ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": "REQ"
+      },
+      "response": []
+    }
+  ],
   "event": [
     {
       "listen": "prerequest",
