@@ -14,7 +14,28 @@
       "request": {
         "method": "POST",
         "header": [],
-        "url": "http://postman-echo.com/post"
+        "url": {
+          "raw": "http://postman-echo.com/post?product=Fortify&Hello=World",
+          "protocol": "http",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": [
+            {
+              "key": "product",
+              "value": "Fortify"
+            },
+            {
+              "key": "Hello",
+              "value": "World",
+              "type": "text"
+            }
+          ]
+        }
       },
       "response": []
     }
