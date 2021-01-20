@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "995f63f0-ae9b-4e12-a5ae-fd8d102c2048",
+    "name": "c1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sample endpoint: Returns details about a particular user",
+      "_postman_id": "2a2ad584-0089-4c04-b7ff-2f579e158677",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/user?id=<integer>",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "user"
+          ],
+          "query": [
+            {
+              "description": "(Required) ID of the user",
+              "key": "id",
+              "value": "<integer>"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "041507f0-c6f6-4598-996d-4d3bbd3e1d71",
+          "name": "Unexpected error",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/user?id=<integer>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n \"code\": 85581851,\n \"message\": \"ipsum aliqua in occaecat\"\n}"
+        },
+        {
+          "id": "ea718b6b-8d7e-4b47-b0d4-0cb96027b912",
+          "name": "Sample response: Details about a user by ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/user?id=<integer>",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "<integer>"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "description": "A link to the next page of responses",
+              "key": "x-next",
+              "value": "enim pariatur eiusmod qui"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n \"id\": -98138376,\n \"name\": \"labore culpa\",\n \"tag\": \"dolore ea\"\n}"
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "id": "baseUrl",
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
